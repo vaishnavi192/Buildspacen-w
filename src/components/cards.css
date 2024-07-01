@@ -1,0 +1,25 @@
+body {
+  background-color: #171717; /* Set the background color of the entire website to #171717 (black) */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+}
+
+.bg-custom {
+  background-color: #00264ade; /* Your desired background color */
+}
+
+.card-custom {
+  background-color: #666666; /* Your desired card color */
+}
+
+
+.truncate {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+.row:hover {
+    color: #666666;
+}
