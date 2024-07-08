@@ -5,7 +5,11 @@ The goal is to build an AI website to find the perfect non-copyrighted songs or 
 
 https://github.com/vaishnavi192/Buildspacen-w/assets/117008958/e28213e0-7ef2-466c-a497-cb88bb568e5e
 
-![WhatsApp Image 2024-07-06 at 11 24 10 AM](https://github.com/vaishnavi192/Buildspacen-w/assets/117008958/a399aa10-ae64-4b2b-88dc-4eaecb45f4dd)
+![Screenshot from 2024-07-08 15-08-58](https://github.com/vaishnavi192/Buildspacen-w/assets/117008958/a59c7aff-db0a-4cf0-b2f3-eb3bb798f4b9)
+
+
+https://github.com/vaishnavi192/Buildspacen-w/assets/117008958/93100bc7-e07b-4e08-b53b-a14912d838d6
+
 
 ## Description
 Being a Youtuber myself with YouTube channel [Vaishu_uff](www.youtube.com/@vaishu_uff) I find it very difficult to find the perfect music or song while editing my YouTube videos based on specific keyword or emotions. While working on the project we figured out that there are various audio mixers AI, new song generation AI but there is no tool to find already available non-copyrighted and copyrighted songs based on emotions. For now we used Spotify API to get the data collections. To get accurate songs based on feelings we implemented NLP and sentiment analysis to get the best songs. The main problem we faced is there is no such API or dataset available for non-copyrighted songs, we have to create our own metadata. This project is still undergoing changes.
