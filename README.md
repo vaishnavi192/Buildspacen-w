@@ -3,12 +3,11 @@
 ## Goal
 The goal is to build an AI website to find the perfect non-copyrighted songs or music based on emotions and text while editing Youtube videos or other platforms. Here is the sample demo of the website. I am working with @saketKaswa on this idea.
 
-https://github.com/vaishnavi192/Buildspacen-w/assets/117008958/e28213e0-7ef2-466c-a497-cb88bb568e5e
 
 ![Screenshot from 2024-07-08 15-08-58](https://github.com/vaishnavi192/Buildspacen-w/assets/117008958/a59c7aff-db0a-4cf0-b2f3-eb3bb798f4b9)
 
 
-https://github.com/vaishnavi192/Buildspacen-w/assets/117008958/93100bc7-e07b-4e08-b53b-a14912d838d6
+https://github.com/vaishnavi192/Buildspacen-w/assets/117008958/ed2b85c8-f279-4666-8c68-21ce1c62d910
 
 
 ## Description
