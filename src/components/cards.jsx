@@ -89,7 +89,7 @@ function Cards() {
     };
 
     return (
-        <div className="container">
+        <div className="container d-flex flex-column justify-content-center align-items-center">
             <div className="search-container">
                 <h1 className="search-title">From "uff" to "ahaa"- Uncover the ideal soundtrack for editing videos!</h1>
                 <form onSubmit={handleSubmit} className="search-form">
@@ -104,21 +104,28 @@ function Cards() {
                 </form>
             </div>
             <div className="cards-container">
-                {tracks.map((track) => (
-                    <div className="card" key={track.id}>
-                        <img
-                            src={track.album.images[0]?.url}
-                            className="card-image"
-                            alt={`${track.name} album cover`}
-                        />
-                        <div className="card-content">
-                            <h3 className="card-title truncate">{track.name}</h3>
-                            <p className="card-artist truncate">{track.artists[0].name}</p>
-                            <CustomAudioPlayer src={track.preview_url} />
+            {tracks.map((track) => (
+                <div className="row" key={track.id}>
+                <div className="col-12 ">
+                <div className="card mb-3 transparent-card" style={{ maxWidth: '100%', backgroundColor: 'transparent', border: '1px solid #689ad3'}}>
+                    <div className="d-flex align-items-center" style={{ gap: '10px', padding: '10px' }}>
+                    <img src={track.album.images[0]?.url} className="img-fluid rounded-start" alt={`${track.name} album cover`} style={{ maxWidth: '100%', maxHeight: '80px' }}/>
+                    <div style={{ flex: 1, textAlign: 'center' }}>
+                        <h5 className="card-title truncate" style={{ marginBottom: '0', color:'#ffffff' }}>{track.name}</h5>
+                        <p className="card-text truncate" style={{ marginBottom: '0', color:'#ffffff'}}>Artist: {track.album.artists[0].name}</p>
                         </div>
+                        <div style={{ display: 'flex', backgroundColor: 'transparent',justifyContent: 'flex-end' }}>
+                        <CustomAudioPlayer src={track.preview_url} />
                     </div>
-                ))}
+                </div>
+                </div>
+                </div>
+                </div>
+               
+            ))}
             </div>
+        
+    
         </div>
     );
 }

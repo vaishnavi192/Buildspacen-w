@@ -4,11 +4,20 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+   
+}
+
+.navbar {
+    background-color: #343a40 !important; 
 }
 
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: 600;
+    color:#ffffff;
+}
+.navbar .navbar-brand {
+    color: #ffffff !important;
 }
 
 .navbar-toggler {
@@ -22,6 +31,7 @@ body {
 
 .navbar-nav .nav-item {
     margin-right: 15px;
+    color:#ffffff;
 }
 
 .navbar-nav .nav-link {
@@ -33,5 +43,5 @@ body {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: #1db954; 
+    color: #115ec3; 
 }
