@@ -66,22 +66,27 @@ function CustomAudioPlayer({ src }) {
 }
 
 function Cards() {
-    const [keyword, setKeyword] = useState("Ahaa");
+    const [keyword, setKeyword] = useState("");
     const [tracks, setTracks] = useState([]);
 
     const getTracks = async () => {
         try {
-            const data = await fetch(`https://v1.nocodeapi.com/vaishnavi19/spotify/iRowyBPHESJTCios/search?q=${keyword}&type=track&limit=8`);
-            const convertedData = await data.json();
-            setTracks(convertedData.tracks.items);
+            const response = await fetch(`https://v1.nocodeapi.com/sample1/spotify/wGWHnPaWAvsKbTRW/search?q=${keyword}&type=track&limit=10`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const convertedData = await response.json();
+            if (convertedData.tracks && Array.isArray(convertedData.tracks.items)) {
+                setTracks(convertedData.tracks.items);
+            } else {
+                console.error('Unexpected data structure:', convertedData);
+                setTracks([]); 
+            }
         } catch (error) {
             console.error('Error fetching tracks:', error);
         }
     };
 
-    useEffect(() => {
-        getTracks();
-    }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -107,7 +112,7 @@ function Cards() {
             {tracks.map((track) => (
                 <div className="row" key={track.id}>
                 <div className="col-12 ">
-                <div className="card mb-3 transparent-card" style={{ maxWidth: '100%', backgroundColor: 'transparent', border: '1px solid #689ad3'}}>
+                <div className="card mb-3 transparent-card" style={{ maxWidth: '100%', backgroundColor: 'transparent', border: '1px groove #6d5274'}}>
                     <div className="d-flex align-items-center" style={{ gap: '10px', padding: '10px' }}>
                     <img src={track.album.images[0]?.url} className="img-fluid rounded-start" alt={`${track.name} album cover`} style={{ maxWidth: '100%', maxHeight: '80px' }}/>
                     <div style={{ flex: 1, textAlign: 'center' }}>
