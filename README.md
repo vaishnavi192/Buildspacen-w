@@ -1,4 +1,4 @@
-# Find Perfect Music website, Music_uff
+# Find Perfect Music with Music_uff
 
 ## Goal
 The goal is to build an AI website to find the perfect non-copyrighted songs or music based on emotions and text while editing Youtube videos or other platforms. Here is the sample demo of the website. I am working with @saketKaswa on this idea.
