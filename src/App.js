@@ -1,5 +1,6 @@
 import Navbar from './components/navbar';
 import Cards from './components/cards';
+import Waitlist from './components/waitlist';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/cards.css';
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Navbar />
       <Cards />
+      <Waitlist />
     </div>
   );
 }
