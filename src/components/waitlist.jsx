@@ -30,7 +30,7 @@ const WaitlistCount = () => {
         <button type="submit" className="waitlist-button">Join Waitlist</button>
       </form>
       </div>
-      <div style={{color: '#f0f0f0'}}>Waitlist Count: {waitlist.length}</div>
+      <div className="waitlist-count">Waitlist Count: {waitlist.length}</div>
     </div>
   );
 };

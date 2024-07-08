@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Navbar from './components/navbar';
 import Cards from './components/cards';
 import Waitlist from './components/waitlist';
@@ -6,16 +7,35 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/cards.css';
  
 function App() {
+  
+  const [currentPage, setCurrentPage] = useState('cards'); 
+
+  
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'cards':
+        return <Cards />;
+      case 'waitlist':
+        return <Waitlist />;
+      default:
+        return <Cards />; 
+    }
+  };
+
+  
+  const navigateTo = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <div>
-      <Navbar />
-      <Cards />
-      <Waitlist />
+      <Navbar navigateTo={navigateTo} />
+      {renderPage()}
     </div>
   );
 }
-export default App
 
+export default App;
 
 
 

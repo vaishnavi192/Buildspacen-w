@@ -1,18 +1,24 @@
 .waitlist-container {
     background: linear-gradient(#6c0260, #002e62);
     backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 8px 32px 0 var(--shadow-color);
-    border: 2px linear-gradient(#ed5bb0, #4a90e2);
-    /* Additional properties for positioning and size */
+    border-image: linear-gradient(#ed5bb0, #4a90e2) 1; /* Corrected border gradient */
+    /* Centering and sizing adjustments */
     position: fixed;
-    top: 80px; /* Adjust as needed */
-    left: 25px;
-    width: 8%; /* Adjust width as needed */
-    height: auto; /* Adjust height as needed, or use a specific value */
-  }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40%; /* Adjust width as needed */
+    height: 40vh; /* Half of viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
   .waitlist-form input[type="text"], .waitlist-form button {
     width: 100%; /* Makes the input and button fill the container width */
@@ -30,7 +36,7 @@
 
   
 .waitlist-button {
-    background-color: rgb(64, 4, 159);
+    background-color: rgb(69, 5, 173);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -62,4 +68,15 @@ transform: translateY(-2px);
     border: 1px solid #ccc; /* Light grey border */
     border-radius: 5px; /* Rounded corners */
     font-size: 16px; /* Larger font size for better readability */
+  }
+
+  .waitlist-count {
+    color: #f0f0f0;
+    font-size: 24px; /* Example size, adjust as needed */
+    margin-top: 20px; /* This might not be needed with fixed positioning */
+    text-align: center; /* Center align if needed */
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px; /* Anchors the div to the bottom of the viewport */
+    left: 0; /* Aligns the div to the left; use right: 0; if you prefer it on the right */
+    width: 100%; /* Ensures it spans the full width of the viewport */
   }
