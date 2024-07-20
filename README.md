@@ -18,8 +18,7 @@ Being a Youtuber myself with YouTube channel [Vaishu_uff](www.youtube.com/@vaish
 React
 Javascript
 AceternityUI
-shadcn
-Nodejs
+nlp
 
 To run the app:
 * Clone the repo
