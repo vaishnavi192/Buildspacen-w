@@ -3,7 +3,7 @@ import Cards from './components/cards';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/cards.css';
- 
+
 function App() {
   return (
     <div>
